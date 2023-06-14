@@ -7,14 +7,21 @@ body {
   
   /* Estilos do cabeçalho */
   header {
-    background-color: #f9c20d;
+    background-color: darkorange;
     padding: 20px;
     text-align: center;
   }
   
-  header h1 {
+  header div {
+    background-image: url("assents/background.jpg");
+    border:2px solid #ccc!important;
+    border-radius:16px
+  }
+
+  header div h1 {
+    font-size: 75px;
     margin: 0;
-    color: #fff;
+    color: seashell;
   }
   
   /* Estilos da navegação */
@@ -25,10 +32,12 @@ body {
   nav ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    text-align: center;
   }
   
   nav ul li {
+    border: 2px solid #333!important;
+    background-color: darkorange;
     display: inline-block;
   }
   
@@ -37,6 +46,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 10px;
+    
   }
   
   /* Estilos das seções */
@@ -45,7 +55,7 @@ body {
   }
   
   section h2 {
-    color: #f9c20d;
+    color: darkorange;
   }
   
   /* Estilos da galeria */
@@ -53,7 +63,7 @@ body {
     max-width: 200px;
     margin: 10px;
   }
-  
+
   /* Estilos do rodapé */
   footer {
     background-color: #333;
