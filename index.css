@@ -1,8 +1,64 @@
-body{
-    background-color: darkslateblue;
-    background-image: url(assents/background.jpg)
-}
-h1{
-    color: white;
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilos do cabeçalho */
+  header {
+    background-color: #f9c20d;
+    padding: 20px;
     text-align: center;
-}
+  }
+  
+  header h1 {
+    margin: 0;
+    color: #fff;
+  }
+  
+  /* Estilos da navegação */
+  nav {
+    background-color: #333;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+  }
+  
+  nav ul li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  /* Estilos das seções */
+  section {
+    padding: 20px;
+  }
+  
+  section h2 {
+    color: #f9c20d;
+  }
+  
+  /* Estilos da galeria */
+  #galeria img {
+    max-width: 200px;
+    margin: 10px;
+  }
+  
+  /* Estilos do rodapé */
+  footer {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+  }
+  
