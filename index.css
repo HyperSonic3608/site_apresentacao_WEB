@@ -1,91 +1,91 @@
 /* Estilos gerais */
 body {
-    background-image: url("assets/bg.jpg");
-    background-repeat: repeat;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* Estilos do cabeçalho */
-  header {
-    background-color: darkorange;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  header div {
-    background-image: url("assents/background.jpg");
-    border:2px solid #ccc!important;
-    border-radius:16px
-  }
+  background-image:url("assents/bg.png") ;
+  background-size: 5%;
+  background-repeat:repeat;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-  header div h1 {
-    font-size: 75px;
-    margin: 0;
-    color: seashell;
-  }
-  
-  /* Estilos da navegação */
-  nav {
-    overflow: hidden;
-    background-color: #333;
-  }
+/* Estilos do cabeçalho */
+header {
+  background-color: darkorange;
+  padding: 20px;
+  text-align: center;
+}
 
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-  }
+header div {
+  background-image: url("assents/header_bg.jpg");
+  border:2px solid #ccc!important;
+  border-radius:16px
+}
 
-  .sticky + .content {
-    padding-top: 60px;
-  }
+header div h1 {
+  font-size: 75px;
+  margin: 0;
+  color: seashell;
+}
 
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    text-align: center;
-  }
-  
-  nav ul li {
-    border: 2px solid #333!important;
-    background-color: darkorange;
-    display: inline-block;
-  }
-  
-  nav ul li a {
-    display: block;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px;
-    
-  }
-  
-  /* Estilos das seções */
-  section {
-    padding: 20px;
-  }
-  
-  section h2 {
-    color: darkorange;
-  }
-  
-  /* Estilos da galeria */
-  #galeria img {
-    max-width: 200px;
-    margin: 10px;
-  }
+/* Estilos da navegação */
+nav {
+  overflow: hidden;
+  background-color: #333;
+}
 
-  /* Estilos do rodapé */
-  footer {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-    color: #fff;
-  }
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  border: 2px solid #333!important;
+  background-color: darkorange;
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
   
+}
+
+/* Estilos das seções */
+section {
+  padding: 20px;
+}
+
+section h2 {
+  color: darkorange;
+}
+
+/* Estilos da galeria */
+#galeria img {
+  max-width: 200px;
+  margin: 10px;
+}
+
+/* Estilos do rodapé */
+footer {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+}
