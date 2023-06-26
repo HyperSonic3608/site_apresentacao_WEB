@@ -5,20 +5,6 @@
     <title>Festa Junina</title>
     <link rel="icon" type="image/x-icon" href="/assents/favicon.png">
     <link rel="stylesheet" type="text/css" href="index.css">
-    <script>
-    window.onscroll = function() {myFunction()};
-
-    var navbar = document.getElementById("navbar");
-    var sticky = navbar.offsetTop
-        
-    function myFunction() {
-      if (window.screenY || document.documentElement.scrollTop >= sticky) {
-      navbar.classList.add("sticky")
-    } else {
-      navbar.classList.remove("sticky");
-    }
-    }
-    </script>
 </head>
 
 <body>
@@ -104,5 +90,20 @@
         <a href="https://www.todamateria.com.br/festas-juninas/" target="_blank">Festa Junina: origem, características e a festa de São João - Toda Matéria</a>
     </p>
     </footer>
+
+    <script>
+        window.onscroll = function() {myFunction()};
+    
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop
+            
+        function myFunction() {
+          if (window.screenY || document.documentElement.scrollTop >= sticky) {
+          navbar.classList.add("sticky")
+        } else {
+          navbar.classList.remove("sticky");
+        }
+        }
+    </script>
 </body>
 </html>
