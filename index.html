@@ -5,6 +5,20 @@
     <title>Festa Junina</title>
     <link rel="icon" type="image/x-icon" href="/assents/favicon.png">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop
+        
+    function myFunction() {
+      if (window.screenY || document.documentElement.scrollTop >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
+    }
+    </script>
 </head>
 
 <body>
@@ -14,13 +28,13 @@
         </div>
     </header>
 
-    <nav class="navbar">
+    <nav id="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#origem">Origem</a></li>
             <li><a href="#características">Características</a></li>
-            <li></li>
+            <li><a href="#música">Música</a></li>
         </ul>
     </nav>
 
@@ -28,49 +42,67 @@
     <section id="home">
         <h2>Seja bem-vindo à Festa Junina!</h2>
         <p>Uma celebração repleta de diversão, comida típica e música tradicional.</p>
+        <img src="assents/img0.jpg"  width="33%">
     </section>
 
     <section id="sobre">
         <h2>O que é a Festa Junina?</h2>
         <p>As festas juninas no Brasil são comemorações anuais adaptadas do solstício de verão europeu, celebrando a natividade de São João Batista. Introduzidas durante o período colonial pelos portugueses, as festividades ocorrem durante todo o mês de junho em todo o país. Elas coincidem com o fim das estações chuvosas no Nordeste, permitindo que as pessoas agradeçam a São João pela chuva. Além disso, as festas celebram a vida rural e apresentam elementos tradicionais como roupas, comidas e danças típicas, como a quadrilha.</p>
+        <img src="assents/img1.jpg"  width="33%">
+        <p style="text-align: center; font-size: 90%;">A quadrilha é uma dança folclórica tradicional das festas juninas, que envolve um grupo de pessoas dançando em pares, seguindo uma coreografia pré-determinada, ao som de música típica, repleta de passos e movimentos característicos.</p>
     </section>
 
     <section id="origem">
         <h2>Origem da Festa Junina</h2>
         <p>A festa junina tem origem pagã e era uma celebração em homenagem aos deuses da natureza e da fertilidade. No hemisfério norte, as pessoas comemoravam a chegada do verão em junho, época da colheita de cereais como o milho. As fogueiras, símbolo atual das festas juninas, também surgiram nessa festividade pagã. A igreja adotou a festa junina e a tornou religiosa para combater sua popularidade. Os portugueses trouxeram a festa junina para o Brasil durante o período colonial, chamando-a de Festa Joanina. Os três santos católicos mais populares do mês de junho - São João, Santo Antônio e São Pedro - passaram a ser celebrados nas festas juninas. A festa sofreu influências africanas e indígenas, tornando-se única em cada região do Brasil.</p>
+        <img src="assents/img2.jpg"  width="25%">
+        <p style="text-align: center; font-size: 90%;">Fogueira do solstício de verão/dia de São João com festividades em frente a um santuário de calvário cristão na Bretanha, 1893</p>
     </section>
 
     <section id="características">
         <h2>Características da Festa Junina</h2>
         <p>Muitas tradições que acompanham essa comemoração representam os principais símbolos das festas juninas que incluem: as comidas, as danças típicas, os balões, a fogueira, as brincadeiras e as roupas.</p>
         <ul>
+            <img src="assents/img3.jpg" width="25%" style="float: right;">
             <li>Comidas de Festa Junina: <br> <br>
                 O milho é um alimento muito importante nessas comemorações e, por isso, diversas comidas típicas de festa junina levam esse ingrediente. <br>
                 Os principais pratos típicos de festa junina são: pipoca, paçoca, pé de moleque, canjica, cachorro-quente, pamonha, curau, bolo de milho, arroz-doce, pinhão, cuscuz e tapioca. <br>
-                Já as bebidas mais tradicionais são: vinho quente e quentão. <br> <br> <br></li>
+                Já as bebidas mais tradicionais são: vinho quente e quentão. <br> <br> <br> <br></li>
+            <img src="assents/img4.jpg" width="25%" style="float: right;">
             <li>Danças típicas da Festa Junina: <br> <br>
                 Nas festas juninas ouve-se e dança-se forró. A quadrilha junina é, todavia, a dança típica da festa. Ela tem origem nas danças de salão na França e consiste numa bailada de casais caracterizados com vestimenta tipicamente caipira. <br>
                 Uma coreografia chamada de casamento caipira é feita em homenagem a Santo Antônio, o santo casamenteiro. <br> <br> <br></li>
+            <img src="assents/img5.jpg" width="33%" style="float: right;">
             <li>Balões e fogueira na Festa Junina: <br> <br>
                 Os balões são tradicionais, embora atualmente existam restrições por questões de segurança. Tradicionalmente, a soltura de balões indica o início das comemorações.  <br>
                 A fogueira também faz parte do cenário da festa. De origem pagã, ela simboliza a proteção contra os maus espíritos. <br>
                 A tradição foi mantida pelos católicos, que dedicaram uma forma de fogueira diferente para cada santo: a quadrada é de Santo Antônio; a redonda de São João; e a triangular de São Pedro. <br> <br> <br></li>
+            <img src="assents/img6.jpg" width="23%" style="float: right;">
             <li>Brincadeiras da Festa Junina <br> <br>
                 Brincadeiras como a cadeia, pau de sebo, pescaria, correio-elegante, saltar a fogueira, argola, entre outros, não podem faltar. Estão incluídas também as simpatias - que acabam carregando um pouco do tom de divertimento. <br>
                 No dia 13 de junho as igrejas distribuem o “pãozinho de Santo Antônio”, o qual deve ser comido pelas mulheres que procuram marido. <br> <br> <br></li>
+            <img src="assents/img7.jpg" width="35%" style="float: right;">
             <li>Roupas de Festa Junina <br> <br>
                 As roupas tradicionais de festa junina são tipicamente caipiras, com vestimentas bem coloridas e de estampa xadrez. <br>
                 Inserida no contexto das festas juninas, a Festa de São João acontece nos dias 23 e 24 de junho, para celebrar o nascimento deste Santo Popular, conhecido como o Santo festeiro. <br>
-                São João nasceu teria nascido no dia 24 de junho e foi um dos santos mais próximos de Jesus Cristo, participando de seu batizado nas margens do Rio Jordão. Por isso, o Dia de São João é 24 de junho. <br> <br> <br></li>
+                São João nasceu teria nascido no dia 24 de junho e foi um dos santos mais próximos de Jesus Cristo, participando de seu batizado nas margens do Rio Jordão. Por isso, o Dia de São João é 24 de junho. <br></li>
         </ul>
     </section>
     </div>
 
-    <footer>
+    <section id="música">
+        <h2>Música trdicional da Festa Junina</h2>
+        <p>As músicas tradicionais da festa junina são características e animadas, refletindo a alegria e a cultura popular brasileira. Abaixo temos uma das músicas mais icônicas dessa incrível festa:</p>
         <audio controls autoplay loop>
             <source src="music.mp3" type="audio/mpeg">
         </audio>
+    </section>
+
+    <footer>
+        <p>Referências: <br>
+        <a href="https://pt.wikipedia.org/wiki/Festa_junina_no_Brasil" target="_blank">Festa junina no Brasil – Wikipédia, a enciclopédia livre</a> <br>
+        <a href="https://www.todamateria.com.br/festas-juninas/" target="_blank">Festa Junina: origem, características e a festa de São João - Toda Matéria</a>
+    </p>
     </footer>
-    
 </body>
 </html>

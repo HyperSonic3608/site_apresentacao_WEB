@@ -1,9 +1,10 @@
 /* Estilos gerais */
 body {
   background-image:url("assents/bg.png") ;
-  background-size: 5%;
+  background-size: 7%;
   background-repeat:repeat;
   font-family: Arial, sans-serif;
+  font-size: 22px;
   margin: 0;
   padding: 0;
 }
@@ -24,47 +25,49 @@ header div {
 header div h1 {
   font-size: 75px;
   margin: 0;
-  color: seashell;
+  color: white;
 }
 
 /* Estilos da navegação */
-nav {
+#navbar {
   overflow: hidden;
   background-color: #333;
 }
 
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  text-align: center;
+}
+
+#navbar ul li {
+  border: 2px solid #333!important;
+  background-color: darkorange;
+  display: inline-block;
+}
+
+#navbar ul li a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Page content */
 .content {
   padding: 16px;
 }
 
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
 .sticky + .content {
   padding-top: 60px;
-}
-
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  text-align: center;
-}
-
-nav ul li {
-  border: 2px solid #333!important;
-  background-color: darkorange;
-  display: inline-block;
-}
-
-nav ul li a {
-  display: block;
-  color: #fff;
-  text-decoration: none;
-  padding: 10px;
-  
 }
 
 /* Estilos das seções */
@@ -77,9 +80,10 @@ section h2 {
 }
 
 /* Estilos da galeria */
-#galeria img {
-  max-width: 200px;
-  margin: 10px;
+section img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Estilos do rodapé */
@@ -88,4 +92,8 @@ footer {
   padding: 10px;
   text-align: center;
   color: #fff;
+}
+
+footer p {
+  font-size: 16px;
 }
