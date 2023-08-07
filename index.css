@@ -56,13 +56,18 @@ header div h1 {
   padding: 10px;
 }
 
-#navbar ul li button {
+#navbar ul div{
+  float: right;
+  text-align:right;
+}
+
+#navbar ul div button {
   font-size: 22px;
-  -moz-box-align:end ;
   background-color: darkorange;
   color: #fff;
   padding: 10px;
 }
+
 .content {
   padding: 16px;
 }
@@ -91,6 +96,14 @@ section img {
   margin-right: auto;
 }
 
+#width25 {
+  width: 25%;
+}
+
+#width33 {
+  width: 33%;
+}
+
 footer {
   background-color: #333;
   padding: 10px;
@@ -100,4 +113,41 @@ footer {
 
 footer p {
   font-size: 16px;
+}
+
+@media (max-width: 800px) {
+  header div h1 {
+    font-size: 13vw;
+  }
+
+  #navbar ul {
+    font-size: 3vw;
+  }
+
+  #navbar ul div button {
+    font-size: 3vw;
+  }
+  
+  #width25 {
+    width:100%;
+  }
+  
+  #width33 {
+    width:100%;
+  }
+}
+
+@media (max-width: 450px) {
+  #navbar ul {
+    font-size: 3.2vw;
+  }
+
+  #navbar ul li a {
+    padding: 2vw 1vw;
+  }
+
+  #navbar ul div button {
+    font-size: 3.2vw;
+    padding: 2.2vw 2vw;
+  }
 }
