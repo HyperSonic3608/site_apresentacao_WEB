@@ -137,7 +137,7 @@ footer p {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 510px) {
   #navbar ul {
     font-size: 3.2vw;
   }
