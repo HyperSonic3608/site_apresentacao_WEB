@@ -1,24 +1,24 @@
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-    captionText.innerHTML = this.alt;
+function openModal(event) {
+  let modal = document.getElementById("myModal");
+  let images = document.getElementsByClassName("images");
+  let modalImg = document.getElementById("img01");
+  for (var i = 0; i < images.length; i++) {
+    var img = images[i];
+    img.onclick = function(evt) {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    }
+  }
 }
 
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() { 
+function closeModal(event) {
+  const modal = document.getElementById("myModal");
   modal.style.display = "none";
 }
 
 function darkmode() {
-    var element = document.body;
-    element.classList.toggle("dark-mode");
+  let element = document.body;
+  let button = document.getElementById("button")
+  element.classList.toggle("dark-mode");
+  button.classList.toggle("fa-flip-horizontal");
 }
