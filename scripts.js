@@ -2,8 +2,8 @@ function openModal(event) {
   let modal = document.getElementById("myModal");
   let images = document.getElementsByClassName("images");
   let modalImg = document.getElementById("img01");
-  for (var i = 0; i < images.length; i++) {
-    var img = images[i];
+  for (let i = 0; i < images.length; i++) {
+    let img = images[i];
     img.onclick = function(evt) {
       modal.style.display = "block";
       modalImg.src = this.src;

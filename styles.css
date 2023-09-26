@@ -92,6 +92,17 @@ section h2 {
   color: darkorange;
 }
 
+section h2, section p, section ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+section audio {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 section img {
   cursor: pointer;
   display: block;
@@ -109,25 +120,16 @@ section img {
 
 .modal {
   display: none;
-  /* Hidden by default */
   position: fixed;
-  /* Stay in place */
   z-index: 11;
-  /* Sit on top */
-  padding-top: 100px;
-  /* Location of the box */
+  padding-top: 10vh;
   left: 0;
   top: 0;
   width: 100%;
-  /* Full width */
   height: 100%;
-  /* Full height */
   overflow: auto;
-  /* Enable scroll if needed */
   background-color: rgb(0, 0, 0);
-  /* Fallback color */
   background-color: rgba(0, 0, 0, 0.9);
-  /* Black w/ opacity */
 }
 
 .modal-content {
@@ -135,24 +137,10 @@ section img {
   display: block;
   width: 80%;
   max-width: 700px;
-}
-
-#caption {
-  margin: auto;
-  display: block;
-  width: 80%;
-  max-width: 700px;
-  text-align: center;
-  color: #ccc;
-  padding: 10px 0;
-  height: 150px;
-}
-
-.modal-content,
-#caption {
   animation-name: zoom;
   animation-duration: 0.6s;
 }
+
 
 @keyframes zoom {
   from {
@@ -180,12 +168,6 @@ section img {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
-  .modal-content {
-    width: 100%;
-  }
-}
-
 footer {
   background-color: #333;
   padding: 10px;
@@ -195,6 +177,10 @@ footer {
 
 footer p {
   font-size: 16px;
+}
+
+.icons {
+  font-size: 30px;
 }
 
 @media (max-width: 800px) {
@@ -209,13 +195,19 @@ footer p {
   #navbar ul div button {
     font-size: 3vw;
   }
-  
-  #width25 {
-    width:100%;
+
+  section h2, section p, section ul {
+    padding-left: 0%;
+    padding-right: 0%;
   }
   
-  #width33 {
+  #width25, #width33 {
     width:100%;
+  }
+
+  .modal-content {
+    text-align: center;
+    width: 100%;
   }
 }
 
@@ -231,5 +223,9 @@ footer p {
   #navbar ul div button {
     font-size: 3.2vw;
     padding: 2.2vw 2vw;
+  }
+
+  .modal{
+    padding-top: 33vh;
   }
 }
